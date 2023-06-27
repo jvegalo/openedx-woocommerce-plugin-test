@@ -1,5 +1,10 @@
 <?php
 
+namespace App\admin;
+use App\model\Openedx_Woocommerce_Plugin_Enrollment;
+use App\model\Openedx_Woocommerce_Plugin_Post_Type;
+use App\admin\views\Openedx_Woocommerce_Plugin_Enrollment_Info_Form;
+
 /**
  * The admin-specific functionality of the plugin.
  *
@@ -56,12 +61,18 @@ class Openedx_Woocommerce_Plugin_Admin {
 	 * @param      string    $plugin_name       The name of this plugin.
 	 * @param      string    $version    The version of this plugin.
 	 */
-	public function __construct( $plugin_name, $version ) {
+	public function __construct( $plugin_name, $version, $test = null) {
 
 		$this->plugin_name = $plugin_name;
 		$this->version = $version;
-		$this->openedx_enrollment = new Openedx_Woocommerce_Plugin_Enrollment( $this );
+		if(!$test){
+			$this->createEnrollmentClass();
+		}
+		
+	}
 
+	public function createEnrollmentClass(){
+		$this->openedx_enrollment = new Openedx_Woocommerce_Plugin_Enrollment( $this );
 	}
 
 	/**
@@ -143,9 +154,13 @@ class Openedx_Woocommerce_Plugin_Admin {
             return;
         }
 
-        $post_type = new Openedx_Woocommerce_Plugin_Post_Type( $post_type, $plural, $single, $description, $options );
-
+        $post_type = $this->createPostType( $post_type, $plural, $single, $description, $options );
+		
         return $post_type;
     }
+
+	public function createPostType($post_type = '', $plural = '', $single = '', $description = '', $options = array()){
+		return new Openedx_Woocommerce_Plugin_Post_Type( $post_type, $plural, $single, $description, $options );
+	}
 
 }

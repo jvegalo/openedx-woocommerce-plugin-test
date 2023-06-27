@@ -167,7 +167,7 @@ class Openedx_Woocommerce_Plugin {
 	 */
 	private function define_admin_hooks() {
 
-		$plugin_admin = new Openedx_Woocommerce_Plugin_Admin( $this->get_plugin_name(), $this->get_version() );
+		$plugin_admin = new App\admin\Openedx_Woocommerce_Plugin_Admin( $this->get_plugin_name(), $this->get_version() );
 
 		// Register enrollment request custom-post-type
 		$this->loader->add_action( 'init', $plugin_admin, 'register_enrollment_custom_post_type' );
