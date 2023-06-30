@@ -52,7 +52,7 @@ class Openedx_Woocommerce_Plugin_Enrollment_Info_Form {
         }
         ?>
         <div id="namediv" class="postbox">
-        <h2 class="">Open edX enrollment request</h2>
+        <h2 class="">Open edX enrollment request!!!</h2>
         <fieldset>
         <input type="hidden" name="new_enrollment" value="<?php echo( $new_enrollment ); ?>">
         <table class="form-table">
