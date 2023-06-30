@@ -58,7 +58,7 @@ class Openedx_Woocommerce_Plugin_Enrollment_Info_Form {
         <table class="form-table">
             <tbody>
                 <tr>
-                    <td class="first"><label for="openedx_enrollment_course_id">Course ID</label></td>
+                    <td class="first"><label for="openedx_enrollment_course_id">Course ID!!!</label></td>
                     <td>
                         <input type="text" id="openedx_enrollment_course_id" name="enrollment_course_id"
                         <?php
