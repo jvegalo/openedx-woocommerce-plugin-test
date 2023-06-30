@@ -197,7 +197,7 @@ class Openedx_Woocommerce_Plugin_Enrollment_Info_Form {
                         }
                         ?>
                         </p>
-                        <p>Last edited: <?php echo( get_the_modified_time( '', $post_id ) . ' ' . get_the_modified_date( '', $post_id ) ); ?></p>
+                        <p>Last edited!!!!: <?php echo( get_the_modified_time( '', $post_id ) . ' ' . get_the_modified_date( '', $post_id ) ); ?></p>
                     </td>
                 </tr>
             </tbody>
