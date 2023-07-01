@@ -137,7 +137,7 @@ class Openedx_Woocommerce_Plugin_Enrollment_Info_Form {
                     </td>
                 </tr>
                 <tr>
-                    <td class="first"><label for="openedx_enrollment_is_active">Request type</label></td>
+                    <td class="first"><label for="openedx_enrollment_is_active">Request typ:</label></td>
                     <td>
 
                         <select id="openedx_enrollment_is_active" name="enrollment_request_type">
