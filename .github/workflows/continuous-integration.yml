@@ -2,7 +2,7 @@ name: Bump version
 on:
   push:
     branches:
-      - continuous-integration-config
+      - continuous-integration-workflow
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -17,20 +17,19 @@ jobs:
           release_branches: continuous-integration-workflow
           github_token: ${{ secrets.GITHUB_TOKEN }}
           
-      - name: Run find-and-replace to remove refs/heads/
-        uses: mad9000/actions-find-and-replace-string@3
-        id: releasename
-        with:
-          source: ${{ steps.tag_version.outputs.new_tag }}
-          find: '-continuous-integration-workflow.0'
-          replace: ' '
+      - name: Modificar variable
+        id: modify_variable
+        run: |
+          variable="${{ steps.tag_version.outputs.new_tag }}"
+          modified_variable=$(echo "$variable" | sed -E 's/Release v([0-9]+\.[0-9]+\.[0-9]+).*/\1/')
+          echo "::set-output name=modified_variable::$modified_variable"
           
       - name: Create a GitHub release
         uses: ncipollo/release-action@v1
         id: create_release
         with:
           tag: ${{ steps.tag_version.outputs.new_tag }}
-          name: Release ${{ steps.releasename.outputs.value }}
+          name: Release ${{ steps.modify_variable.outputs.modified_variable }}
           body: ${{ steps.tag_version.outputs.changelog }}
           
       - name: Update version in PHP file
@@ -40,7 +39,7 @@ jobs:
           
       - name: Append release info to CHANGELOG.md
         run: |
-          echo "## Release ${{ steps.releasename.outputs.value }}" >> CHANGELOG.md
+          echo "## Release ${{ steps.modify_variable.outputs.modified_variable }}" >> CHANGELOG.md
           echo "${{ steps.tag_version.outputs.changelog }}" >> CHANGELOG.md
             
       - name: Commit and push changes to CHANGELOG.md

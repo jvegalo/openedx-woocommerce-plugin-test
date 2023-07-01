@@ -173,15 +173,15 @@ class Openedx_Woocommerce_Plugin_Enrollment_Info_Form {
                 <?php if ( get_post_meta( $post_id, 'errors', true ) ) : ?>
                 <!-- Temporal display of errors, TODO: move this to a polished div  -->
                 <tr>
-                    <td class="first"><label for="openedx_enrollment_errors">Errors</label></td>
+                    <td class="first"><label for="openedx_enrollment_errors">Errors:</label></td>
                     <td>
                         <p><?php echo( get_post_meta( $post_id, 'errors', true ) ); ?></p>
                     </td>
                 </tr>
                 <?php else : ?>
-                    <td class="first"><label for="openedx_enrollment_errors">Operation log</label></td>
+                    <td class="first"><label for="openedx_enrollment_errors">Operation log:</label></td>
                     <td>
-                        <p>No errors ocurred processing this request</p>
+                        <p>No errors ocurred processing this request!</p>
                     </td>
                 <?php endif; ?>
 
