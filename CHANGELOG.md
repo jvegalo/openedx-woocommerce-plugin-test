@@ -15,3 +15,19 @@
 * corrected file names according to the class they contain ([c2c2d55](https://github.com/jvegalo/openedx-woocommerce-plugin-test/commit/c2c2d555d7c685953b36cb11e2a5f330a62278a0))
 
 
+## Release v1.2.0-continuous-integration-config.0
+## [1.2.0-continuous-integration-config.0](https://github.com/jvegalo/openedx-woocommerce-plugin-test/compare/v1.0.0...v1.2.0-continuous-integration-config.0) (2023-07-01)
+
+
+### Features
+
+* add test feature ([af854a7](https://github.com/jvegalo/openedx-woocommerce-plugin-test/commit/af854a70c3426d67e4c89ae8dd73e29f96079ab8))
+* add test feature 2 ([4dcc910](https://github.com/jvegalo/openedx-woocommerce-plugin-test/commit/4dcc910f2cdfa3d29b581f361681ffd8bd53afc6))
+
+
+### Bug Fixes
+
+* update test feature 2, it was broken ([49d9ce2](https://github.com/jvegalo/openedx-woocommerce-plugin-test/commit/49d9ce2757b6f57cca61f89c202db1f97d12c6d4))
+* update test feature, it was broken ([3c54d14](https://github.com/jvegalo/openedx-woocommerce-plugin-test/commit/3c54d143218e862db24a996a02109cbb397b3331))
+
+
