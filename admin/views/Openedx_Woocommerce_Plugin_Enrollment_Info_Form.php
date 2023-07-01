@@ -179,9 +179,9 @@ class Openedx_Woocommerce_Plugin_Enrollment_Info_Form {
                     </td>
                 </tr>
                 <?php else : ?>
-                    <td class="first"><label for="openedx_enrollment_errors">Operation log</label></td>
+                    <td class="first"><label for="openedx_enrollment_errors">Operation log:</label></td>
                     <td>
-                        <p>No errors ocurred processing this request</p>
+                        <p>No errors ocurred processing this request!</p>
                     </td>
                 <?php endif; ?>
 
