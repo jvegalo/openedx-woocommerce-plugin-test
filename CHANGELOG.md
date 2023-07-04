@@ -49,3 +49,17 @@
 * version change ([ec87b23](https://github.com/jvegalo/openedx-woocommerce-plugin-test/commit/ec87b234c1b3853100b3f2521bfe5bb6ed934b55))
 
 
+## Release v1.3.0
+## [1.3.0](https://github.com/jvegalo/openedx-woocommerce-plugin-test/compare/v1.2.1...v1.3.0) (2023-07-04)
+
+
+### Features
+
+* add readme.txt bump version ([68dcfa8](https://github.com/jvegalo/openedx-woocommerce-plugin-test/commit/68dcfa87c3e69165aafe0944fe9c4312b39e5482))
+
+
+### Bug Fixes
+
+* update placehold form testing ([ec68443](https://github.com/jvegalo/openedx-woocommerce-plugin-test/commit/ec684439e5f35ef1ea38c50d57103825b273be0a))
+
+
