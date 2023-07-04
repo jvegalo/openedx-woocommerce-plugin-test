@@ -1,4 +1,4 @@
-name: Bump version
+name: Continuous Integration
 on:
   push:
     branches:
@@ -17,7 +17,7 @@ jobs:
           release_branches: continuous-integration-config
           github_token: ${{ secrets.GITHUB_TOKEN }}
           
-      - name: Modificar variable
+      - name: Modify tag_version text
         id: modify_variable
         run: |
           variable="${{ steps.tag_version.outputs.new_tag }}"
