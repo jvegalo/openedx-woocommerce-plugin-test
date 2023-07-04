@@ -31,3 +31,12 @@
 * update test feature, it was broken ([3c54d14](https://github.com/jvegalo/openedx-woocommerce-plugin-test/commit/3c54d143218e862db24a996a02109cbb397b3331))
 
 
+## Release v1.2.0
+## [1.2.0](https://github.com/jvegalo/openedx-woocommerce-plugin-test/compare/v1.0.0...v1.2.0) (2023-07-04)
+
+
+### Bug Fixes
+
+* release version text ([d82139f](https://github.com/jvegalo/openedx-woocommerce-plugin-test/commit/d82139f31e51c0f9cc65e661319e1251266e1e5d))
+
+
